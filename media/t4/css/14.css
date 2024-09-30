@@ -196,7 +196,7 @@
 	opacity: 1;
 }
 #t4-hero .bg-overlay-image {
-	background-image: url(/mpf-web/images/demo/hero/hero-1.jpeg);
+	background-image: url(/mpf-web/images/hero.webp);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -316,8 +316,9 @@
 body {
   background-color: #ffffff;
   color: #888888;
-  font-family: inherit;
-  font-style: inherit;
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: normal;
   letter-spacing: normal; 
 }
 .t4-content {

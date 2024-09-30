@@ -1,5 +1,38 @@
+$first-color: #00A0E0;
+
 #t4-header{
-    position: absolute;
+    position: absolute !important;
     width: 100%;
     border-bottom: none;
+}
+
+.navbar-nav{
+    background-color: $first-color;
+}
+
+.nav-item {
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.t4-megamenu .navbar-nav>li.active>a, .t4-megamenu .navbar-nav>li.active>.nav-link{
+    border-bottom: none;
+}
+
+@media (min-width: 992px) {
+    .nav-breakpoint-lg .t4-megamenu .navbar-nav>li>a, .nav-breakpoint-lg .t4-megamenu .navbar-nav>li>.nav-link {
+        padding: 1.2rem 0.8em;
+    }
+}
+
+
+.acm-hero{
+    .hero-content{
+        .hero-heading{
+            font-size: 1.6rem;
+            color: #fff;
+            margin-bottom: 0;
+        }
+    }
 }

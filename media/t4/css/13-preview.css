@@ -196,8 +196,11 @@
 	opacity: 1;
 }
 #t4-masthead .bg-overlay-image {
-	background-image: url(/mpf-web/images/demo/bg/section-5.png);
+	background-image: url(/mpf-web/images/image_5.png);
+	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment: fixed;
 }
 
 /* Section: mainbody */
@@ -247,8 +250,9 @@
 body {
   background-color: #ffffff;
   color: #888888;
-  font-family: inherit;
-  font-style: inherit;
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: normal;
   letter-spacing: normal; 
 }
 .t4-content {

@@ -52,12 +52,12 @@ else
 if (!empty($data['extra_class'])) {
   $seccls[] = ' ' . $data['extra_class'];
 }
-if (!empty($data['color_pattern'])) {
-  $seccls[] = ' t4-palette-' . $data['color_pattern'];
-}
-if (!empty($data['sticky'])) {
-  $seccls[] = ' t4-sticky';
-}
+// if (!empty($data['color_pattern'])) {
+//   $seccls[] = ' t4-palette-' . $data['color_pattern'];
+// }
+// if (!empty($data['sticky'])) {
+//   $seccls[] = ' t4-sticky';
+// }
 $sectionId = " id='".implode(' ', $secId)."'";
 $sectionClasses = ' class="' . implode(' ', $seccls) . '"';
 
