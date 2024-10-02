@@ -527,8 +527,7 @@
   }
 }
 
-#t4-section-7,
-#t4-section-8 {
+#t4-section-7{
   .t4-row {
     margin-left: 0;
     margin-right: 0;
@@ -608,21 +607,29 @@
 }
 
 #t4-section-8 {
-  .t4-section-module {
-    padding-left: $grid-gutter-width;
-    padding-right: $grid-gutter-width;
+  // .t4-section-module {
+  //   padding-left: $grid-gutter-width;
+  //   padding-right: $grid-gutter-width;
 
-    @include media-breakpoint-up(xl) {
-      padding-left: 14.063em;
-      padding-right: 0;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
+  //   @include media-breakpoint-up(xl) {
+  //     padding-left: 14.063em;
+  //     padding-right: 0;
+  //     margin-top: 0;
+  //     margin-bottom: 0;
+  //   }
 
-    @include media-breakpoint-down(md) {
-      margin-top: $grid-gutter-width;
-      margin-bottom: $grid-gutter-width;
-    }
+  //   @include media-breakpoint-down(md) {
+  //     margin-top: $grid-gutter-width;
+  //     margin-bottom: $grid-gutter-width;
+  //   }
+  // }
+
+  .bg-overlay-image {
+    background-size: auto 100% !important;
+  }
+
+  .bg-overlay {
+    z-index: 0;
   }
 
   .custom {

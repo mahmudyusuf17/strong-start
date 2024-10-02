@@ -36,12 +36,12 @@ if(isset($catids) && $catids['0'] != ''){
 }
 
 ?>
-<div class="category-module<?php echo $moduleclass_sfx; ?> mod-blog mod-grid">
-	<div class="row">
+<div class="category-module<?php echo $moduleclass_sfx; ?> mod-blog mod-grid ss-blog-homepage">
+	<!-- <div class=""> -->
 		<?php $count = 0; foreach ($list as $item) : ?>
-			<div class="col-md-12 col-lg-12 <?php if ($count%4 == 0) echo 'clear'; ?>">
+			<div class="my-4 ss-blog-content <?php if ($count%4 == 0) echo 'clear'; ?>">
 				<div class="row">
-					<div class="item-info col-md-6">
+					<div class="item-info <?php if($count == 0) echo 'col-md-8'; else echo 'col-md-7'?>">
 						<!-- <?php if ($item->displayDate) : ?>
 							<span class="mod-articles-category-date">
 								<?php echo $item->displayDate; ?>
@@ -104,12 +104,12 @@ if(isset($catids) && $catids['0'] != ''){
 							</p>
 						<?php endif; ?> -->
 					</div>
-					<div class="col-md-6">
+					<div class="<?php if($count == 0) echo 'col-md-4'; else echo 'col-md-5'?>">
 						<?php echo JLayoutHelper::render('joomla.content.intro_image', $item); ?>
 					</div>
 				</div>
 
 			</div>
 		<?php $count++; endforeach; ?>
-	</div>
+	<!-- </div> -->
 </div>
