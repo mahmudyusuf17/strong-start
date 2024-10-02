@@ -376,7 +376,7 @@
     > .t4-row {
       @include media-breakpoint-up(lg) {
         > .t4-component,
-        > .component, {
+        > .component {
           padding-right: $grid-gutter-width*2;
         }
 
@@ -749,10 +749,6 @@
       border-bottom: 0;
       padding-bottom: 0;
       margin-bottom: 0;
-
-      &::after {
-        content: ".";
-      }
     }
   }
 

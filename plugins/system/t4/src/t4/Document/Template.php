@@ -721,7 +721,7 @@ class Template
 			foreach ($contents as $col) {
 				$html .= $this->renderCol($col) . "\n";
 			}
-			$html = "<div class=\"t4-row row align-items-center justify-content-between\">\n$html</div>\n";
+			$html = "<div class=\"t4-row row\">\n$html</div>\n";
 		}
 
 

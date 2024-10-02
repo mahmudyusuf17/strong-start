@@ -21,6 +21,10 @@ $color-white: #ffffff;
     border-bottom: none;
 }
 
+.ss-main-menu{
+    margin-top: 34px;
+}
+
 @media (min-width: 992px) {
     .nav-breakpoint-lg .t4-megamenu .navbar-nav>li>a, .nav-breakpoint-lg .t4-megamenu .navbar-nav>li>.nav-link {
         padding: 1.2rem 0.8em;
@@ -82,4 +86,30 @@ $color-white: #ffffff;
 .ss-banner-callout{
     text-align: center;
     color: $color-white;
+
+    p{
+        font-size: 1.4rem;
+        margin-bottom: 0;
+    }
+}
+
+.footnav-1, .footnav-2, .footnav-3, .footnav-4, .footnav-5 {
+    .module-title {
+        color: $first-color;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .module-ct{
+        .custom{
+            p{
+                margin-bottom: 4px;
+                text-transform: uppercase;
+
+                a{
+                    color: $first-color;
+                }
+            }
+        }
+    }
 }
