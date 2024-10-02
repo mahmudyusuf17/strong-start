@@ -307,6 +307,8 @@
       img {
         min-width: 100%;
         border-radius: $border-radius;
+        object-fit: cover;
+        height: 225px;
       }
     }
 
@@ -324,10 +326,10 @@
     .mod-project-item {
       position: relative;
       overflow: hidden;
-      margin-bottom: $grid-gutter-width;
       transition: 350ms all;
       transform: scale(1);
       z-index: 1;
+      border-radius: 24px;
 
       &:hover {
         transform: scale(1.1);
@@ -350,9 +352,9 @@
       left: 0;
       z-index: 2;
       display: flex;
-      flex-wrap: wrap;
-      align-items: end;
-      opacity: 0;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
       transition: 350ms all;
 
       .inner {
@@ -362,7 +364,7 @@
       .mod-articles-category-title {
         color: $white;
         font-size: $h5-font-size;
-        margin-bottom: $spacer*1.5;
+        text-transform: uppercase;
         display: block;
       }
  

@@ -35,7 +35,7 @@ if(isset($catids) && $catids['0'] != ''){
 <div class="category-module<?php echo $moduleclass_sfx; ?> mod-projects mod-grid">
 	<div class="row">
 		<?php foreach ($list as $item) : ?>
-			<div class="col-sm-6 col-md-3">
+			<div class="col-sm-6 col-md-4">
 				<div class="mod-project-item">
 					<?php echo JLayoutHelper::render('joomla.content.intro_image', $item); ?>
 
@@ -51,15 +51,4 @@ if(isset($catids) && $catids['0'] != ''){
 		<?php endforeach; ?>
 	</div>
 
-	<?php 
-	//Get category info
-	if(isset($jacategory)) : ?>
-	<div class="text-center">
-		<a class="category-link" href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($jacategory->id));?>">
-			<?php echo JText::_('TPL_VIEW_ALL_PROJECTS'); ?> <i class="fas fa-long-arrow-alt-right"></i>
-		</a>
-	</div>
-	<?php endif;
-	//End add
-	?>
 </div>

@@ -33,7 +33,7 @@ $secondCol			= 12;
 
 if (!$modlayouts) {
 	$firstCol = 4;
-	$secondCol = 8;
+	$secondCol = 12;
 }
 
 if (!empty ($module->content)) {

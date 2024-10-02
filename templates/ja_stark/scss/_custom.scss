@@ -1,4 +1,5 @@
 $first-color: #00A0E0;
+$color-white: #ffffff;
 
 #t4-header{
     position: absolute !important;
@@ -31,8 +32,54 @@ $first-color: #00A0E0;
     .hero-content{
         .hero-heading{
             font-size: 1.6rem;
-            color: #fff;
-            margin-bottom: 0;
+            color: $color-white;
+            margin-bottom: 25px;
+            margin-top: 150px;
         }
     }
+}
+
+.hero-2{
+    .btn.btn-primary{
+        background-color: $first-color;
+        color: $color-white;
+    }
+
+    .btn-hero{
+        position: absolute;
+        top: 200px;
+        left: 0;
+        right: 0;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+.btn-primary-color{
+    background-color: $first-color;
+    border-color: $first-color;
+    color: $color-white;
+
+    &:hover{
+        color: $color-white;
+    }
+}
+
+#t4-section-1 .container{
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+#t4-section-2 .container{
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.t4-section.t4-section-2{
+    background-color: $first-color;
+}
+
+.ss-banner-callout{
+    text-align: center;
+    color: $color-white;
 }
