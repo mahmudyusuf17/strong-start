@@ -224,13 +224,13 @@
 #t4-section-3 .bg-overlay {
 	opacity: 1;
 }
-#t4-section-3 .bg-overlay-image {
+/* #t4-section-3 .bg-overlay-image {
 	background-image: url(/mpf-web/images/demo/bg/section-2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
 	background-attachment: fixed;
-}
+} */
 
 /* Section: section-4 */
 
@@ -244,7 +244,7 @@
 	opacity: 1;
 }
 #t4-section-5 .bg-overlay-image {
-	background-image: url(/mpf-web/images/demo/bg/section-5.png);
+	/* background-image: url(/mpf-web/images/demo/bg/section-5.png); */
 	background-attachment: fixed;
 }
 
