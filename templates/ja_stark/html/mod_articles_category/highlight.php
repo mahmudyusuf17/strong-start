@@ -32,21 +32,19 @@ if(isset($catids) && $catids['0'] != ''){
 }
 
 ?>
-<div class="category-module<?php echo $moduleclass_sfx; ?> mod-locations mod-grid">
-	<div class="row">
-		<?php foreach ($list as $item) : ?>
-			<div class="col-sm-6 col-md-3">
-				<div class="mod-locations-item">
+<div class="category-module<?php echo $moduleclass_sfx; ?> mod-highlight mod-grid">
+	<?php foreach ($list as $item) : ?>
+		<!-- <div class="col-sm-6 col-md-3"> -->
+			<div class="mod-highlight-item">
 
-					<div class="item-info"><div class="inner">
-						<?php if ($params->get('link_titles') == 1) : ?>
-							<a class="mod-articles-category-title <?php echo $item->active; ?>" href="<?php echo $item->link; ?>"><?php echo $item->title; ?></a>
-						<?php else : ?>
-							<?php echo $item->title; ?>
-						<?php endif; ?>
-					</div></div>
-				</div>
+				<div class="item-info"><div class="inner">
+					<?php if ($params->get('link_titles') == 1) : ?>
+						<a class="mod-articles-category-title <?php echo $item->active; ?>" href="<?php echo $item->link; ?>"><?php echo $item->title; ?></a>
+					<?php else : ?>
+						<?php echo $item->title; ?>
+					<?php endif; ?>
+				</div></div>
 			</div>
-		<?php endforeach; ?>
-	</div>
+		<!-- </div> -->
+	<?php endforeach; ?>
 </div>

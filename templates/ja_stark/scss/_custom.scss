@@ -2,6 +2,10 @@ $first-color: #00A0E0;
 $color-white: #ffffff;
 $color-text: #555555;
 
+html{
+    overflow-x: hidden;
+}
+
 #t4-header{
     position: absolute !important;
     width: 100%;
@@ -94,10 +98,51 @@ $color-text: #555555;
     }
 }
 
+.t4-section-3{
+    background-color: #e6e6e6;
+
+    .mod-highlight-item{
+        padding: 15px 0;
+        border-bottom: 3px solid $first-color;
+        width: 65%;
+
+        .mod-articles-category-title{
+            font-size: 1.2rem;
+            font-weight: 400;
+            font-style: italic;
+            color: $color-text;
+
+            &::before {
+                content: '>';
+                color: $color-white;
+                font-size: 1.4rem;
+                margin-right: 10px;
+            }
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+
+    .moduless-highlight-image{
+        position: absolute;
+        top: 0;
+        right: -220px;
+        bottom: 0;
+
+        img{
+            width: 600px;
+            height: 600px;
+            border-radius: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
 #t4-section-4 .container{
     padding-top: 1em;
     padding-bottom: 1em;
-    margin: 2em 0 0 0;
 
     .ss-scrolling-text{
         color: $color-white;
