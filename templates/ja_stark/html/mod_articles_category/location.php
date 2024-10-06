@@ -37,6 +37,7 @@ if(isset($catids) && $catids['0'] != ''){
 		<?php foreach ($list as $item) : ?>
 			<div class="col-sm-6 col-md-3">
 				<div class="mod-locations-item">
+					<a href="<?php echo $item->link; ?>" class="mod-locations-button">Enquire Now</a>
 					<?php echo JLayoutHelper::render('joomla.content.intro_image', $item); ?>
 
 					<div class="item-info"><div class="inner">
