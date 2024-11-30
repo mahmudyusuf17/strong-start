@@ -52,9 +52,9 @@ h6, .h6 {
 h1, .h1 {
   font-size: $h1-font-size;
 
-  @include media-breakpoint-down(md) {
-    font-size: $h1-font-size*0.75 !important;
-  }
+  // @include media-breakpoint-down(md) {
+  //   font-size: $h1-font-size*0.75 !important;
+  // }
 }
 h2, .h2 {
   font-size: $h2-font-size;

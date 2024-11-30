@@ -175,9 +175,9 @@ while ($idx < count($list)) {
 	}
 
 	// Add caret
-	if ($item->deeper) {
-		$item->caret = '<i class="item-caret"></i>';
-	}
+	// if ($item->deeper) {
+	// 	$item->caret = '<i class="item-caret"></i>';
+	// }
 
 	echo '<li class="' . $class . '" data-id="'.$item->id.'" itemprop="name" data-level="'.$item->level.'"'. $align . '>';
 	$item->mega_sub = false;

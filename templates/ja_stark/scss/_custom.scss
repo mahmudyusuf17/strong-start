@@ -3,7 +3,7 @@ $color-white: #ffffff;
 $color-text: #555555;
 $color-light-grey: #F0F4F7;
 
-html{
+html, body{
     overflow-x: hidden;
 }
 
@@ -84,7 +84,7 @@ html{
         p{
             display: inline;
             font-size: 1.1rem;
-            font-weight: 500;
+            font-weight: 600;
             text-transform: uppercase;
             background-color: $color-light-grey;
             padding: 15px 40px;
@@ -159,7 +159,7 @@ html{
 
         p{
             font-size: 1.2rem;
-            font-weight: 500;
+            font-weight: 600;
             color: $first-color;
             background-color: $color-white;
             display: inline;
@@ -184,6 +184,7 @@ html{
         -moz-animation: scroll-left 2s linear infinite;
         -webkit-animation: scroll-left 2s linear infinite;
         animation: scroll-left 15s linear infinite;
+        white-space: nowrap;
     }
 }
 
@@ -208,41 +209,11 @@ html{
         max-width: 650px;
         margin: 20px auto;
     }
-
-    .moduleintro-offer{
-        position: absolute;
-        bottom: -25px;
-        left: 0;
-        right: 0;
-        text-align: center;
-
-        .custom{
-            display: grid;
-        }
-
-        p{
-            background-color: $first-color;
-            padding: 4px 16px;
-            color: $color-white;
-            display: inline-block;
-            text-align: center;
-            font-weight: 400;
-            margin: 2px auto;
-
-            &.ss-offer-1{
-                transform: rotate(3deg);
-            }
-
-            &.ss-offer-2{
-                transform: rotate(-3deg);
-            }
-        }
-    }
 }
 
 // SECTION 6 STYLE
 #t4-section-6 .container{
-    padding-top: 5em;
+    padding-top: 3em;
     padding-bottom: 5em;
 }
 
@@ -266,7 +237,6 @@ html{
             }
     
             img{
-                border-radius: 40px;
                 width: 200px;
                 height: 220px;
                 object-fit: cover;
@@ -296,6 +266,25 @@ html{
             &:hover{
                 text-decoration: none;
             }
+        }
+    }
+
+    .moduleintro-offer{
+        text-align: center;
+        margin-bottom: 50px;
+
+        .custom{
+            display: block;
+        }
+
+        p{
+            background-color: $first-color;
+            padding: 8px 24px;
+            color: $color-white;
+            display: inline-block;
+            text-align: center;
+            font-weight: 400;
+            margin: 2px 6px;
         }
     }
 }
@@ -344,6 +333,7 @@ html{
         font-weight: 600;
         color: $color-text !important;
         text-align: center;
+        text-transform: uppercase;
     }
 
     .mod-testimonial-item{
@@ -367,7 +357,7 @@ html{
 
 .ss-section-8{
     .col-md-12{
-        padding: 60px 0;
+        padding: 0 0 40px 0;
     }
     .ss-blog-homepage{
         .item-info{
@@ -399,6 +389,31 @@ html{
             overflow-y: auto;
             overflow: hidden;
 
+        }
+    }
+    
+    .moduless-our-mission{
+        background-color: $color-light-grey;
+        text-align: center;
+        padding: 60px 0;
+        text-transform: uppercase;
+
+        .col-md-12{
+            padding: 0;
+        }
+
+        h3{
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: $color-text;
+        }
+
+        p{
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: $color-text;
+            max-width: 80%;
+            margin: 0 auto;
         }
     }
 }
